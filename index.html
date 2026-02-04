@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Pass Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="generator-container">
+        <center>
+            <h1>Secure Password Generator</h1>
+            <hr>
+            <br>
+        
+        <!-- Display area -->
+        <div class="result-container">
+            <input type="text" id="passwordResult" readonly placeholder="Your password will appear here">
+            <button id="copyBtn">Copy</button>
+            <br>
+        </div>
+
+        <!-- Settings -->
+        <div class="settings">
+            <div class="setting">
+                <br>
+                <label>Length</label>
+                <input type="number" id="length" min="1" max="50" value="8">
+            </div>
+            <br>
+            <div class="setting">
+                <label>Include Numbers</label>
+                <input type="checkbox" id="numbers" checked>
+            </div>
+            <br>
+            <div class="setting">
+                <label>Include Symbols</label>
+                <input type="checkbox" id="symbols" checked>
+            </div>
+            <br>
+        </div>
+
+        <button id="generateBtn" class="main-btn">Generate Password</button>
+        </center>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
